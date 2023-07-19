@@ -11,16 +11,18 @@
 </head>
 <body>
     <div class="background">
-    <header class="header">
+    <header class="header" id="main_page">
+        <div class="container">
         <nav>
-            <ul class="list">
+            <ul class="list nav">
                 <li><a class="link" href="#main_page">Головна</a></li>
                 <li><a class="link" href="#all_projects">Нашi проекти</a></li>
                 <li><a class="link" href="#all_services">Послуги</a></li>
                 <li><a class="link" href="">Новини</a></li>
-                <li><a class="link" href="#footer">Контакти</a></li>
+                <li><a class="link" href="#contacts">Контакти</a></li>
             </ul>
         </nav>
+    </div>
     </header>
        <main>
         <section class="section-first"> 
@@ -29,7 +31,7 @@
             <button class="button" type="button">Наші проекти</button>
         </section>
     </div>
-        <section class="section-services" id="main_page">
+        <section class="section-services">
             <h2 class="section-services-title">Ми створюємо мобільні додатки для великих корпорацій</h2>
             <p class="section-services-text">Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для
             текстів на латиниці з початку XVI ст.</p>
@@ -82,23 +84,23 @@
         </section>
         <section class="section-all-services" id="all_services">
             <h2 class="section-all-services-title">Наші роботи на яких ми спеціалізуємось</h2>
-            <button type="button">Всі послуги</button>
+            <button class="button" type="button">Всі послуги</button>
             <ul class="list">
                 <li>
                     <img src="./images/image_all_services.jpg" alt="people and pk">
-                    <p class="section-all-services-text-title">01. Дослідження і упаковка</p>
+                    <p class="section-all-services-text-title"><span class=number-title>01.</span> Дослідження і упаковка</p>
                     <p class="section-all-services-text">Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.</p>
                     <a class="link" href="">Детальніше</a>
                 </li>
                 <li>
                     <img src="./images/image_all_services.jpg" alt="people and pk">
-                    <p class="section-all-services-text-title">01. Дослідження і упаковка</p>
+                    <p class="section-all-services-text-title"><span class=number-title>01.</span> Дослідження і упаковка</p>
                     <p class="section-all-services-text">Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.</p>
                     <a class="link" href="">Детальніше</a>
                 </li>
                 <li>
                     <img src="./images/image_all_services.jpg" alt="people and pk">
-                    <p class="section-all-services-text-title">01. Дослідження і упаковка</p>
+                    <p class="section-all-services-text-title"><span class=number-title>01.</span> Дослідження і упаковка</p>
                     <p class="section-all-services-text">Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.</p>
                     <a class="link" href="">Детальніше</a>
                 </li>
@@ -115,23 +117,25 @@
                 <li><img src="./images/img-our-projects-2.jpg" alt="coding"></li>
                 <li><img src="./images/img-our-projects-2.jpg" alt="coding"></li>
             </ul>
-            <button type="button">Всі проекти</button>
+            <button class="button" type="button">Всі проекти</button>
         </section>
         <section class="video">
             <h2 class="video-title">Відео про нашу роботу</h2>
             <p class="video-text">Просто подивіться, як ми працюємо</p>
+            <button class="button-video">
             <img src="./images/play-button.png" alt="play-button" />
-            <p class="video-text">Дивитись відео</p>
+            <p class="video-text-button">Дивитись відео</p>
+        </button>
         </section>
         <section class="subscribe">
             <h3 class="subscribe-title">Підпишіться на нашу розсилку</h3>
-            <p class="subscribe-text">Корисні статті, акції, новини - отримайте все це зараз!</p>
-            <p class="subscribe-text">Ми не шлем спам, і не передаємо нікому ваші дані</p>
+            <p class="subscribe-text-one">Корисні статті, акції, новини - отримайте все це зараз!</p>
+            <p class="subscribe-text-two">Ми не шлем спам, і не передаємо нікому ваші дані</p>
         </section>
     </main>
-    <footer class="footer">
-        <section class="footer-adress">
-        <h3 class="footer-adress-text">Контактная информация</h3>
+    <footer class="footer" id="contacts">
+        <section class="footer-title">
+        <h3 class="footer-adress-text">Контактна інформація</h3>
         <address class="list">
             <li>
             <img src="./images/icons/envelope.png" alt="envelope"/>
@@ -146,19 +150,71 @@
         </li>
         </address>
     </section>
-        <section class="footer-soclink">
-            <h3 class="footer-soclink-text">Основні посилання</h3>
+        <section class="footer-nav">
+            <h3 class="footer-title">Основні посилання</h3>
             <nav>
                 <ul class="list">
-                    <li><a class="link" href="#main_page">Головна</a></li>
-                    <li><a class="link" href="#all_projects">Нашi проекти</a></li>
-                    <li><a class="link" href="#all_services">Послуги</a></li>
-                    <li><a class="link" href="">Новини</a></li>
-                    <li><a class="link" href="#footer">Контакти</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg><a class="link" href="#main_page">Головна</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg><a class="link" href="#all_projects">Нашi проекти</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg><a class="link" href="#all_services">Послуги</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg><a class="link" href="">Новини</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg><a class="link" href="#footer">Контакти</a></li>
                 </ul>
             </nav>
-            <p class="footer-text">&copy2019. Всі права захищені</p>
-        </section>
+    </section>
+    <section class="footer-our-project">
+        <h3 class="footer-title">Наші проекти</h3>
+        <ul class="list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg>
+            <a class="link" href="">Укрпошта</a>
+            </li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg>
+            <a class="link" href="">Нафтогаз</a>
+            </li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg>
+            <a class="link" href="">Львівська пивоварня</a>
+            </li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg>
+            <a class="link" href="">ТЭЦ Калуша</a>
+            </li>
+        </ul>
+    </section>
+    <section class="footer-social">
+        <h3 class="footer-title">Соціальні мережі</h3>
+        <ul class="list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg><a class="link" href="">LinkedIn</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg><a class="link" href="">Instagram</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg><a class="link" href="">Facebook</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+  <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
+</svg><a class="link" href="">Twitter</a></li>
+        </ul>
+    </section>
+        <p class="footer-text">&copy2019. Всі права захищені</p>
     </footer>
 </body>
 </html>

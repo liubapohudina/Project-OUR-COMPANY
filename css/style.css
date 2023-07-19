@@ -1,7 +1,8 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 :root {
+    --font-family: "Montserrat", sans-serif;
     --backgr-type-one: #F6F6F8;
     --backgr-type-two: #FFF;
     --color-button:  #4985FF;
@@ -17,7 +18,7 @@ body {
     text-decoration: none;
 }
 
-/---------------------HEADER---------------------------/
+/*---------------------HEADER---------------------------*/
 
 
 .header {
@@ -27,6 +28,15 @@ font-size: 16px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.02em;
+}
+.header .container {
+    border-bottom: 0.5 solid #A1A1A1;
+}
+.header .link {
+    color: var(--color-text-white);
+font-family: var(--font-family);
+font-size: 16px;
+font-weight: 500;
 }
 .section-first-text {
     color: var(--color-text-white);
@@ -57,12 +67,12 @@ cursor: pointer;
 .background {
     background-image: url("/images/image-background.jpg");
 }
+
+/*----------------------SERVICES-----------------------*/
+
 .section-services {
     background-color: var(--backgr-type-two);
 }
-
-/----------------------SERVICES-----------------------/
-
 
 .section-services-title {
     color: var(--color-text-dark);
@@ -97,7 +107,7 @@ font-weight: 400;
 line-height: 1.6;
 }
 
-/------------------------ABOUT US---------------------------/
+/*------------------------ABOUT US---------------------------*/
 
 .section-about-us {
     background-color: var(--backgr-type-one);
@@ -132,10 +142,139 @@ font-weight: 400;
 line-height: 1.5;
 }
 
-/---------------------------ALL SERVICES-------------------------/
+/*---------------------------ALL SERVICES-------------------------*/
+
+.section-all-services {
+   background-image: linear-gradient(#5F12D0 50%, white 50%);   
+}
+.section-all-services-title {
+    font-family: var(--font-family);
+    color: var(--color-text-white);
+font-size: 36px;
+font-weight: 700;
+line-height: 1.5;
+}
+.section-all-services-text-title{
+    color: var(--color-black);
+font-family: var(--font-family);
+font-size: 18px;
+font-weight: 600;
+line-height: normal;
+}
+.section-all-services-text {
+    color: var(--color-text-grey);
+font-family: var(--font-family);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+}
+.number-title {
+    color: var(--color-button);
+}
+.section-all-services .link {
+    text-decoration: underline;
+    color: var(--color-button);
+font-family: var(--font-family);
+font-size: 16px;
+font-weight: 500;
+line-height: normal;
+}
+
+/*-----------------------------SECTION-ALL-PROJECTS----------------*/
+
+.section-all-projects {
+    background: var(--backgr-type-one);
+}
+.section-all-projects-title {
+    color: var(--color-black);
+text-align: center;
+font-family: var(--font-family);
+font-size: 36px;
+font-weight: 700;
+line-height: 1.5;
+}
+.section-all-projects-text {
+    color: var(--color-text-grey);
+text-align: center;
+font-family: var(--font-family);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+}
+.list {
+}
+
+/*------------------------------VIDEO-------------------------*/
+
+.video {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), url(/images/image-background.jpg), lightgray 50% / cover no-repeat;
+}
+.video-title {
+    color: var(--color-text-white);
+text-align: center;
+font-family: var(--font-family);
+font-size: 36px;
+font-weight: 700;
+line-height: 1.5;
+}
+.video-text {
+    color: var(--color-text-white);
+text-align: center;
+font-family: var(--font-family);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+}
+.button-video {
+    border-radius: 10px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(/images/backg-button.jpg), lightgray 50% / cover no-repeat;
+box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+}
+.video-text-button {
+    color: var(--color-text-white);
+font-family: var(--font-family);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.6;
+}
 
 
+/*-------------------------SUBSCRIBE--------------------*/
 
+.subscribe {
+    background-color: var(--backgr-type-two);
+}
+.subscribe-title {
+    color: var(--color-black);
+text-align: center;
+font-family: var(--font-family);
+font-size: 18px;
+font-weight: 600;
+}
+.subscribe-text-one {
+    color: var(--color-text-grey);
+text-align: center;
+font-family: var(--font-family);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+}
+.subscribe-text-two {
+    color: var(--color-text-grey);
+text-align: center;
+font-family: var(--font-family);
+font-size: 13px;
+font-weight: 400;
+line-height: 1.6;
+}
+
+
+/*--------------------------------FOOTER----------------*/
+
+.footer {
+    background: var(--backgr-type-one);
+}
+.footer .social
 
 
 
