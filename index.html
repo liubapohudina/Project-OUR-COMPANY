@@ -10,11 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <div class="background">
     <header class="header" id="main_page">
         <div class="container">
+            <div class="navigation">
         <nav>
             <ul class="list nav">
-                <li><a class="link" href="#main_page">Головна</a></li>
+                <li><a class="link current" href="#main_page">Головна</a></li>
                 <li><a class="link" href="#all_projects">Нашi проекти</a></li>
                 <li><a class="link" href="#all_services">Послуги</a></li>
                 <li><a class="link" href="">Новини</a></li>
@@ -22,7 +24,9 @@
             </ul>
         </nav>
     </div>
-    <img class="line" src="./images/Line.png" alt="line" />
+    </div>
+</header>
+<main>
         <section class="section-first">
             <div class="container">
             <p class="section-first-text">Передова IT студія</p>
@@ -30,21 +34,21 @@
             <button class="button" type="button">Наші проекти</button>
         </div>
         </section>
-    </header>
-    <main>
+    </div>
+        
         <section class="section-services">
             <div class="container">
             <h2 class="section-services-title">Ми створюємо мобільні додатки для великих корпорацій</h2>
             <p class="section-services-text">Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для
             текстів на латиниці з початку XVI ст.</p>
           <ul class="list">
-            <li> 
+            <li class="item"> 
             <h3 class="section-services-title-item">Створення сайтів</h3>
             <p class="section-services-text">Lorem Ipsum - це текст-"риба", часто використовує у пресі та веб-дизайні.</p></li>
-            <li>
+            <li class="item">
             <h3 class="section-services-title-item">Створення сайтів</h3>
             <p class="section-services-text">Lorem Ipsum - це текст-"риба", часто використовує у пресі та веб-дизайні.</p></li>
-            <li>
+            <li class="item">
             <h3 class="section-services-title-item">Створення сайтів</h3>
             <p class="section-services-text">Lorem Ipsum - це текст-"риба", часто використовує у пресі та веб-дизайні.</p></li>
           </ul>
@@ -53,11 +57,18 @@
         </section>
         <section class="section-about-us">
             <div class="container">
+            <div class="item">
+                    <div class="item-left">
             <h2 class="section-about-us-title">Високі стандарти розробки</h2>
             <p class="section-about-us-text">Lorem Ipsum - це текст-риба, що часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для
             текстів на латиниці з початку XVI ст.</p>
             <a class="link" href="index.html">Детальніше про компанію</a>
+        </div>
+                <div class="item-right">
             <img src="./images/img-1.jpg" alt="man writes"/>
+        </div>
+    </div>
+                <div class="item-bottom">
             <ul class="list">
                     <li>
                     <h3 class="section-about-title-item">125</h3>
@@ -82,6 +93,7 @@
                     <p class="section-about-us-text">Our projects</p>
                 </li>
             </ul>
+        </div>
         </div>
         </section>
         <section class="section-all-services" id="all_services">
@@ -108,10 +120,9 @@
                     <a class="link" href="">Детальніше</a>
                 </li>
             </ul>
-            <img class="line" src="./images/Line.png" alt="line" />
         </div>
         </section>
-        <section class="section-all-projects">
+        <section class="section-all-projects" id="all_projects">
             <div class="container">
             <h2 class="section-all-projects-title">Наші проекти</h2>
             <p class="section-all-projects-text">
@@ -145,8 +156,9 @@
         </section>
     </main>
     <footer class="footer" id="contacts">
+        <div class="container">
         <section class="footer-title">
-            <div class="container">
+            
         <h3 class="footer-adress-text">Контактна інформація</h3>
         <address>
             <ul class="list">
@@ -163,10 +175,10 @@
         </li>
             </ul>
         </address>
-    </div>
+    
     </section>
         <section class="footer-nav">
-            <div class="container">
+            
             <h3 class="footer-title">Основні посилання</h3>
             <nav>
                 <ul class="list">
@@ -187,10 +199,10 @@
 </svg><a class="link" href="#footer">Контакти</a></li>
                 </ul>
             </nav>
-        </div>
+        
     </section>
     <section class="footer-our-project">
-        <div class="container">
+        
         <h3 class="footer-title">Наші проекти</h3>
         <ul class="list">
             <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -214,10 +226,10 @@
             <a class="link" href="">ТЭЦ Калуша</a>
             </li>
         </ul>
-    </div>
+    
     </section>
     <section class="footer-social">
-        <div class="container">
+      
         <h3 class="footer-title">Соціальні мережі</h3>
         <ul class="list">
             <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -232,10 +244,9 @@
             <li><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
   <path d="M3.13248 9.40313C3.07046 9.46515 2.99294 9.49615 2.90767 9.49615C2.8224 9.49615 2.74488 9.46515 2.68287 9.40313C2.55884 9.2791 2.55884 9.07755 2.68287 8.95352L6.63636 5.00003L2.68287 1.04654C2.55884 0.922511 2.55884 0.720961 2.68287 0.59693C2.8069 0.472898 3.00845 0.472898 3.13248 0.59693L7.31077 4.77522C7.43481 4.89926 7.43481 5.10081 7.31077 5.22484L3.13248 9.40313Z" fill="#999999"/>
 </svg><a class="link" href="">Twitter</a></li>
-        </ul>
-        <img class="line" src="./images/Line.png" alt="line" />
-    </div>
+    </ul>
     </section>
+</div>
         <p class="footer-text">&copy;2019. Всі права захищені</p>
     </footer>
 </body>
