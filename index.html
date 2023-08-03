@@ -131,10 +131,10 @@
                 Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.
             </p>
             <ul class="list">
-                <li><img src="./images/img-our-projects-2.jpg" alt="coding"></li>
-                <li><img src="./images/img-our-projects-2.jpg" alt="coding"></li>
-                <li><img src="./images/img-our-projects-2.jpg" alt="coding"></li>
-                <li><img src="./images/img-our-projects-2.jpg" alt="coding"></li>
+                <li class="img-all-services"><img src="./images/img-our-projects-2.jpg" alt="coding"></li>
+                <li class="img-all-services"><img src="./images/img-our-projects-2.jpg" alt="coding"></li>
+                <li class="img-all-services"><img src="./images/img-our-projects-2.jpg" alt="coding"></li>
+                <li class="img-all-services"><img src="./images/img-our-projects-2.jpg" alt="coding"></li>
             </ul>
             <button class="button" type="button">Всі проекти</button>
             </div>
@@ -143,16 +143,28 @@
             <div class="container">
             <h2 class="video-title">Відео про нашу роботу</h2>
             <p class="video-text">Просто подивіться, як ми працюємо</p>
-            <button class="button-video">
-            <img src="./images/play-button.png" alt="play-button" />
-            <b class="video-text-button">Дивитись відео</b>
-        </button>
+            <div class="play-video background-video-play">
+                <a href="">
+                <span class="play-button-group">
+            <svg class="play-button" width="60" height="60">
+                <use class="link" href="./images/icons.svg#icon-play-button"></use>
+            </svg>
+            <p class="video-text-button">Дивитись відео</p>
+            </span></a>
+            </div>
     </div>
         </section>
         <section class="subscribe">
             <div class="container">
             <h3 class="subscribe-title">Підпишіться на нашу розсилку</h3>
             <p class="subscribe-text-one">Корисні статті, акції, новини - отримайте все це зараз!</p>
+            <form class="form">
+                <label class="label-input" aria-label="input mail">
+                    <input type="email" name="usermail" class="input" placeholder="Ваш e-mail" />
+                    <button class="input-btn" type="submit">Підписатися</button>
+                </label>
+               
+            </form>
             <p class="subscribe-text-two">Ми не шлем спам, і не передаємо нікому ваші дані</p>
         </div>
         </section>
